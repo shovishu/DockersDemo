@@ -13,7 +13,7 @@ public class TestClass {
     WebDriver driver;
 
     @BeforeMethod
-    public void launchBrowser() throws MalformedURLException { master
+    public void launchBrowser() throws MalformedURLException {
         ChromeOptions options = new ChromeOptions();
         options.setCapability("browserName", "chrome");
 
