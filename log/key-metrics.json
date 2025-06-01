@@ -1,7 +1,7 @@
 [ {
-  "duration" : 0.030699968338012695,
+  "duration" : 0.014300107955932617,
   "eventName" : "sdk:pre-test",
-  "startTime" : 1.1062956910098E9,
+  "startTime" : 1.2863913842101E9,
   "success" : true,
   "worker" : 1,
   "failure" : null,
