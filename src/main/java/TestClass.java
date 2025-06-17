@@ -17,8 +17,7 @@ public class TestClass {
         ChromeOptions options = new ChromeOptions();
         options.setCapability("browserName", "chrome");
 
-        driver = new RemoteWebDriver(new URL("http://192.168.14.246:4444/wd/hub"), options);
-
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/"), options);
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
@@ -42,6 +41,7 @@ public class TestClass {
     @Test
     public void getTitle4(){
         driver.get("https://www.sonyLIV.com");
+        driver.get("https://www.sonyliv.com");
         String title = driver.getTitle();
         System.out.println(title);
     }
