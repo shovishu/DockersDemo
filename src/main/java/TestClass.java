@@ -1,18 +1,28 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TestClass {
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
 
+public class TestClass {
     WebDriver driver;
 
     @BeforeMethod
-    public void launchBrowser() {
-        driver = new ChromeDriver();
+    public void launchBrowser() throws MalformedURLException {
+        ChromeOptions options = new ChromeOptions();
+        options.setCapability("browserName", "chrome");
+
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/"), options);
+
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
+
     }
 
     @Test
@@ -45,8 +55,6 @@ public class TestClass {
 
     @AfterMethod
     public void quitBrowser(){
-        if (driver!=null){
-            driver.quit();
-        }
+        driver.quit();
     }
 }
