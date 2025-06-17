@@ -40,6 +40,13 @@ public class TestClass {
     }
 
     @Test
+    public void getTitle4(){
+        driver.get("https://www.sonyLIV.com");
+        String title = driver.getTitle();
+        System.out.println(title);
+    }
+
+    @Test
     public void getTitle3(){
         driver.get("https://www.netflix.com");
         String title = driver.getTitle();

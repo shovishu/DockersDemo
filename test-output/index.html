@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +114,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Suite" title="TestClass" class="method navigator-link" hash-for-method="getTitle3">getTitle3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="TestClass" class="method navigator-link" hash-for-method="getTitle4">getTitle4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Automation_Suite -->
@@ -153,6 +158,13 @@
                   <a name="getTitle3">
                   </a> <!-- getTitle3 -->
                   <span class="method-name">getTitle3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTitle4">
+                  </a> <!-- getTitle4 -->
+                  <span class="method-name">getTitle4</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,24 +221,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getTitle3')
 data.setCell(0, 2, 'TestClass')
-data.setCell(0, 3, 8308);
+data.setCell(0, 3, 6549);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getTitle2')
+data.setCell(1, 1, 'getTitle4')
 data.setCell(1, 2, 'TestClass')
-data.setCell(1, 3, 2476);
+data.setCell(1, 3, 3812);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getTitle1')
+data.setCell(2, 1, 'getTitle2')
 data.setCell(2, 2, 'TestClass')
-data.setCell(2, 3, 1704);
+data.setCell(2, 3, 2056);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getTitle1')
+data.setCell(3, 2, 'TestClass')
+data.setCell(3, 3, 1917);
 window.suiteTableData['Automation_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Automation_Suite">
               </div> <!-- times-div-Automation_Suite -->
             </div> <!-- times-div -->
@@ -259,35 +275,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getTitle1</span>
-                <span class="method-start">3580 ms</span>
+                <span class="method-start">6199 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">5286 ms</span>
+                <span class="method-start">8120 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">6897 ms</span>
+                <span class="method-start">10127 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getTitle2</span>
-                <span class="method-start">10099 ms</span>
+                <span class="method-start">13365 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">12575 ms</span>
+                <span class="method-start">15421 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">14626 ms</span>
+                <span class="method-start">17350 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getTitle3</span>
-                <span class="method-start">18559 ms</span>
+                <span class="method-start">20480 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">26869 ms</span>
+                <span class="method-start">27029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">28981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getTitle4</span>
+                <span class="method-start">32054 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">35867 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

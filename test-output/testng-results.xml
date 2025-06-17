@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-29T18:44:46 IST" name="Automation Suite" finished-at="2025-05-29T18:45:16 IST" duration-ms="29335">
+  <suite started-at="2025-05-29T19:34:07 IST" name="Automation Suite" finished-at="2025-05-29T19:34:45 IST" duration-ms="37994">
     <groups>
     </groups>
-    <test started-at="2025-05-29T18:44:46 IST" name="Regression Test" finished-at="2025-05-29T18:45:16 IST" duration-ms="29335">
+    <test started-at="2025-05-29T19:34:07 IST" name="Regression Test" finished-at="2025-05-29T19:34:45 IST" duration-ms="37994">
       <class name="TestClass">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:44:46 IST" name="launchBrowser" finished-at="2025-05-29T18:44:50 IST" duration-ms="3578" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:08 IST" name="launchBrowser" finished-at="2025-05-29T19:34:14 IST" duration-ms="6198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="getTitle1()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:44:50 IST" name="getTitle1" finished-at="2025-05-29T18:44:52 IST" duration-ms="1704" status="PASS">
+        <test-method signature="getTitle1()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:14 IST" name="getTitle1" finished-at="2025-05-29T19:34:16 IST" duration-ms="1917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitle1 -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:44:52 IST" name="quitBrowser" finished-at="2025-05-29T18:44:53 IST" duration-ms="1609" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:16 IST" name="quitBrowser" finished-at="2025-05-29T19:34:18 IST" duration-ms="2005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:44:53 IST" name="launchBrowser" finished-at="2025-05-29T18:44:56 IST" duration-ms="3202" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:18 IST" name="launchBrowser" finished-at="2025-05-29T19:34:21 IST" duration-ms="3238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="getTitle2()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:44:56 IST" name="getTitle2" finished-at="2025-05-29T18:44:59 IST" duration-ms="2476" status="PASS">
+        <test-method signature="getTitle2()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:21 IST" name="getTitle2" finished-at="2025-05-29T19:34:23 IST" duration-ms="2056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitle2 -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:44:59 IST" name="quitBrowser" finished-at="2025-05-29T18:45:01 IST" duration-ms="2051" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:23 IST" name="quitBrowser" finished-at="2025-05-29T19:34:25 IST" duration-ms="1927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:45:01 IST" name="launchBrowser" finished-at="2025-05-29T18:45:05 IST" duration-ms="3933" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:25 IST" name="launchBrowser" finished-at="2025-05-29T19:34:28 IST" duration-ms="3130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="getTitle3()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:45:05 IST" name="getTitle3" finished-at="2025-05-29T18:45:13 IST" duration-ms="8308" status="PASS">
+        <test-method signature="getTitle3()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:28 IST" name="getTitle3" finished-at="2025-05-29T19:34:35 IST" duration-ms="6549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitle3 -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@324a0017]" started-at="2025-05-29T18:45:13 IST" name="quitBrowser" finished-at="2025-05-29T18:45:16 IST" duration-ms="2421" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:35 IST" name="quitBrowser" finished-at="2025-05-29T19:34:37 IST" duration-ms="1952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:37 IST" name="launchBrowser" finished-at="2025-05-29T19:34:40 IST" duration-ms="3070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="getTitle4()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:40 IST" name="getTitle4" finished-at="2025-05-29T19:34:43 IST" duration-ms="3812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle4 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TestClass@4879dfad]" started-at="2025-05-29T19:34:43 IST" name="quitBrowser" finished-at="2025-05-29T19:34:45 IST" duration-ms="2070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
