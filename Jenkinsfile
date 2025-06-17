@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Get the source code from version control (e.g., Git).'
-                git 'https://github.com/shovishu/DockersDemo.git'
+                git 'https://github.com/shovishu/DockersDemo.gi'
             }
         }
         stage('Build') {
