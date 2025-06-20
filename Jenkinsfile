@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        cron('30 16 * * *')
+    }
+
     environment {
         deployEnv = 'staging'
     }
