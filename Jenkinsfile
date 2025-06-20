@@ -1,7 +1,5 @@
-pipeline {
-    agent any
-
-    stages {
+node {
+    try {
         stage('Checkout') {
             steps {
                 echo 'Get the source code from version control (e.g., Git).'
@@ -28,5 +26,31 @@ pipeline {
                 }
             }
         }
+    } catch (e) {
+        currentBuild.result = 'FAILURE'
+        echo "Caught an error: ${e}"
+    } finally {
+        stage('Post Build') {
+            if (currentBuild.result == 'FAILURE') {
+                emailext (
+                    subject: "❌ Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                    body: """<p>Hi Team,</p>
+                             <p>The build <b>${env.JOB_NAME} #${env.BUILD_NUMBER}</b> has <span style='color:red;'><b>FAILED</b></span>.</p>
+                             <p>Check the console output at: <a href='${env.BUILD_URL}'>${env.BUILD_URL}</a></p>""",
+                    mimeType: 'text/html',
+                    to: 'shovishu@gmail.com'
+                )
+            } else {
+                emailext (
+                    subject: "✅ Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                    body: """<p>Hi Team,</p>
+                             <p>The build <b>${env.JOB_NAME} #${env.BUILD_NUMBER}</b> was <span style='color:green;'><b>SUCCESSFUL</b></span>.</p>
+                             <p>Check the console output at: <a href='${env.BUILD_URL}'>${env.BUILD_URL}</a></p>""",
+                    mimeType: 'text/html',
+                    to: 'shovishu@gmail.com'
+                )
+            }
+        }
     }
 }
+
